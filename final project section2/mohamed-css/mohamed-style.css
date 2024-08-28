@@ -1,0 +1,86 @@
+.BGIMGS-2 {
+  position: relative;
+  z-index: 0; 
+  background-image:url(../Ellipse-13.png),url(../Ellipse-14.png),url(../Ellipse-13.png);
+  background-position: left top,right center,left bottom; 
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.mohamed-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mohamed-section:nth-child(even) {
+  flex-direction: row-reverse; /* Alternate the layout for even sections */
+}
+
+.mohamed-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.habiba-header1 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.habiba-subtext {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.mohamed-image {
+  flex: 1;
+  text-align: center;
+}
+
+.mohamed-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mohamed-button {
+  background-color: white;
+  color: #0056b3;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 50px;
+  border-color: #0056b3;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mohamed-button:hover {
+  background-color: #5ba2ef;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .mohamed-img {
+      width: 30rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mohamed-section {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .mohamed-content, .mohamed-image {
+      width: 100%;
+  }
+
+  .mohamed-img {
+      width: 15rem;
+  }
+}
